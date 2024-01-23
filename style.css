@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 30px;
+  padding: 10px;
+}
+
+input {
+  padding: 20px 50px;
+}
+
+#container-buttons {
+  display: flex;
+  gap: 50px;
+}
+
+#container-buttons > button {
+  width: 50%;
+  padding: 20px 40px;
+  text-align: center;
+  visibility: visible;
+}
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #34303064;
+  width: 100%;
+  height: 100%;
+}
+
+#modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#modal-content > div {
+  display: flex;
+  gap: 20px;
+}
+
+#modal-content > div > button {
+  width: 100px;
+  padding: 5px;
+}
