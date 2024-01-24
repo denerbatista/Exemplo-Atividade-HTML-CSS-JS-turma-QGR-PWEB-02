@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  <body>
+    <main>
+      <article>
+        <h1>Responda se for capaz...</h1>
+        <fieldset>
+          <label for="pergunta-1"> Quanto é 2 x 1 ? </label>
+          <input id="pergunta-1" name="pergunta-1" />
+          <span id="correcao-pergunta-1"></span>
+          <span id="resposta-pergunta-1" style="color: red;"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="pergunta-2"> Quanto é 2 x 2 ? </label>
+          <input id="pergunta-2" name="pergunta-2" />
+          <span id="correcao-pergunta-2"></span>
+          <span id="resposta-pergunta-2" style="color: red;"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="pergunta-3"> Quanto é 2 x 3 ? </label>
+          <input id="pergunta-3" name="pergunta-3" />
+          <span id="correcao-pergunta-3"></span>
+          <span id="resposta-pergunta-3" style="color: red;"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="pergunta-4"> Quanto é 2 x 4 ? </label>
+          <input id="pergunta-4" name="pergunta-4" />
+          <span id="correcao-pergunta-4"></span>
+          <span id="resposta-pergunta-4" style="color: red;"></span>
+        </fieldset>
+
+        <div id="container-buttons">
+          <button id="btn-enviar" onclick="switchModal()">Enviar</button>
+          <button onclick="reiniciar()">Limpar</button>
+        </div>
+      </article>
+
+      <div id="modal-overlay">
+        <div id="modal-content">
+          <h2>Confirma envio de suas respostas ?</h2>
+          <div>
+            <button onclick="corretor()">Sim</button>
+            <button onclick="switchModal()">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
